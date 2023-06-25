@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Patterns</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Mental Health Patterns</h1>
+        <form id="addItemForm">
+            <div class="form-group">
+                <label for="itemTitle">Title</label>
+                <input type="text" class="form-control" id="itemTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="itemDescription">Description</label>
+                <textarea class="form-control" id="itemDescription" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Item</button>
+        </form>
+        <div id="itemList" class="mt-4">
+            <!-- Item list will be populated dynamically -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
